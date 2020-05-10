@@ -38,7 +38,7 @@ server.get('/*', (req, res) => {
   const initialState = {
     location: req.url
   }
-
+  console.log("test")
   return res.send(
     Html({
       body: '',

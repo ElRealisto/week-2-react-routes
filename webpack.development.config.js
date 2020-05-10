@@ -12,7 +12,7 @@ const config = {
   entry: [
     'babel-polyfill',
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:3001',
+    'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './main.js',
     './assets/scss/main.scss'
@@ -34,7 +34,7 @@ const config = {
     contentBase: path.resolve(__dirname, 'dist/assets'),
     watchContentBase: true,
     host: 'localhost',
-    port: 3001,
+    port: 8080,
 
     historyApiFallback: true,
     overlay: {
@@ -226,7 +226,7 @@ const config = {
         {}
       )
     ),
-    new HardSourceWebpackPlugin(),
+    // new HardSourceWebpackPlugin(),
 
     new webpack.HotModuleReplacementPlugin()
   ]
