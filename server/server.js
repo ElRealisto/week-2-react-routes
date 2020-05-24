@@ -38,7 +38,7 @@ server.get('/*', (req, res) => {
   const initialState = {
     location: req.url
   }
-  console.log("test")
+  // console.log('test')
   return res.send(
     Html({
       body: '',
@@ -49,4 +49,4 @@ server.get('/*', (req, res) => {
 
 server.listen(port)
 
-console.log(`Serving at http://localhost:${port}`)
+// console.log(`Serving at http://localhost:${port}`)
